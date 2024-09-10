@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-white shadow-lg fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-indigo-600 rounded-full">My Logo</div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="index.html" class="hover-color px-4">Home</a>
+                <a href="education.html" class="hover-color px-4">Education</a>
+                <a href="skills.html" class="hover-color px-4">Skills</a>
+                <a href="achievements.html" class="hover-color px-4">Achievements</a>
+                <a href="contact.html" class="hover-color px-4">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden flex items-center px-3 py-2 border rounded text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-white" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <span class="ml-2"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-white shadow-lg">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="education.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Education</a>
+            <a href="skills.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Skills</a>
+            <a href="achievements.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Achievements</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </nav>>
+
+    <!-- Hero Section -->
+  <!-- Hero Section -->
+<section id="hero" class="pt-24 pb-16 bg-[url('\profile.jpg')] h-[650px] bg-cover">
+    <div class="container mx-auto pt-32 text-center ">
+        <img src="my.jpg" alt="Profile" class="mx-auto rounded-full w-32 h-32 border-4 border-indigo-600" />
+        <h1 class="text-4xl font-bold mt-4 text-green-400 " id="live-name"></h1>
+        <p class="text-xl mt-2 text-white">JAMIA MILLIA ISLAMIA(NEW DELHI)</p>
+        <p class="text-xl mt-2 text-white">MASTER OF COMPUTER APPLICATION</p>
+        <div class="flex justify-center space-x-6  w-[300px] mx-auto">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/your-phone-number" target="_blank" class="text-gray-700 bg-red-400 rounded-full hover:text-green-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.477 2 2 6.481 2 12c0 2.163.685 4.167 1.845 5.79L2 22l4.31-1.86A9.942 9.942 0 0012 22c5.523 0 10-4.481 10-10S17.523 2 12 2zm0 17.93c-1.6 0-3.117-.468-4.41-1.268l-.31-.186-2.54 1.098.46-2.614-.17-.272A7.931 7.931 0 014.07 12c0-4.396 3.538-7.93 7.93-7.93 4.394 0 7.93 3.534 7.93 7.93 0 4.396-3.536 7.93-7.93 7.93zM15.44 13.56l-1.47-.53c-.194-.07-.403-.026-.544.12l-.68.69a4.392 4.392 0 01-2.69-2.69l.69-.68c.145-.145.188-.352.12-.545l-.53-1.47a.423.423 0 00-.385-.29h-.875c-.236 0-.423.19-.423.424a6.754 6.754 0 006.756 6.756c.235 0 .424-.19.424-.424v-.875a.424.424 0 00-.29-.384z"/>
+                </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" class="text-gray-700 bg-red-400 rounded-full hover:text-blue-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22.23 0H1.77C.792 0 0 .774 0 1.729v20.542C0 23.228.792 24 1.77 24h20.46c.978 0 1.77-.773 1.77-1.729V1.729C24 .774 23.208 0 22.23 0zM7.118 20.452H3.691V9.036h3.427v11.416zM5.404 7.686h-.024c-1.15 0-1.894-.79-1.894-1.778 0-1.008.77-1.78 1.944-1.78 1.175 0 1.894.772 1.918 1.78-.024.988-.743 1.778-1.944 1.778zM20.452 20.452h-3.427v-5.807c0-1.474-.528-2.48-1.846-2.48-1.007 0-1.607.676-1.87 1.33-.097.236-.12.563-.12.89v6.067h-3.427s.045-9.847 0-10.853h3.427v1.538c.456-.706 1.274-1.714 3.1-1.714 2.264 0 3.96 1.484 3.96 4.675v6.354z"/>
+                </svg>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/your-github-username" target="_blank" class="text-gray-700 bg-red-400 rounded-full hover:text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5.373 0 0 5.373 0 12a12 12 0 008.207 11.385c.6.111.793-.26.793-.577v-2.17c-3.338.725-4.033-1.64-4.033-1.64-.546-1.387-1.332-1.756-1.332-1.756-1.09-.744.082-.73.082-.73 1.204.084 1.837 1.256 1.837 1.256 1.07 1.834 2.808 1.305 3.492.997.109-.774.418-1.305.762-1.605-2.666-.3-5.466-1.333-5.466-5.932 0-1.31.468-2.382 1.236-3.222-.124-.301-.535-1.518.117-3.163 0 0 1.008-.322 3.3 1.23a11.466 11.466 0 013.003-.403c1.02.005 2.048.137 3.003.403 2.292-1.552 3.3-1.23 3.3-1.23.654 1.645.243 2.862.12 3.163.77.84 1.236 1.912 1.236 3.222 0 4.61-2.803 5.63-5.475 5.923.43.372.815 1.103.815 2.225v3.293c0 .32.19.694.798.575A12.004 12.004 0 0024 12c0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:your-email@example.com" class="text-gray-700 bg-red-400 rounded-full hover:text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511L12 13 4 6.511V6h16zm-16 2.055l7.478 5.78a.997.997 0 001.044 0L20 8.055V18H4V8.055z"/>
+                </svg>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+1234567890" class="text-gray-700 bg-red-400 rounded-full hover:text-blue-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 14.1c-.78 0-1.541-.12-2.268-.344a2.415 2.415 0 00-2.432.582l-1.6 1.6a16.922 16.922 0 01-6.823-6.823l1.6-1.6a2.417 2.417 0 00.582-2.432A10.996 10.996 0 009.9 4c0-.553-.447-1-1-1H4c-.553 0-1 .447-1 1C3 14.598 9.403 21 18 21c.553 0 1-.447 1-1v-4.9c0-.553-.447-1-1-1z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+<section id="about" class="pt-24 pb-16 bg-white">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold hover-bold">MY BRIEF INTRODUCTION</h1>
+        <p class="mt-4 text-gray-700">
+            Hi, I'm Sujeet Kumar, a passionate web developer with a focus on creating beautiful, user-friendly websites.
+            and dedicated Master of Computer Applications graduate from Jamia Millia Islamia, New Delhi.
+
+            With a strong foundation in computer science and a keen interest in web development, I specialize in creating dynamic and user-friendly web applications. My skill set includes DSA,JAVA and Full Stack Developer, which I leverage to build responsive and visually appealing projects.
+            
+            I am enthusiastic about continuously learning new technologies and applying them to solve real-world problems. Whether it's developing innovative solutions or optimizing existing systems, I am committed to delivering high-quality results.
+            
+            Feel free to explore my portfolio to see my work and get in touch if you'd like to collaborate or learn more about my projects
+        </p>
+        </div>
+
+</section>
+<footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+        <p class="text-sm">&copy; 2024 Sujeet Kumar. All rights reserved.</p>
+        <a href="#" class="text-indigo-400 hover:text-indigo-300 text-sm">Privacy Policy</a>
+    </div>
+</footer>
+<script src="name.js"></script>
+
+
+</body>
+</html>
