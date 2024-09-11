@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-400 shadow-lg fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <!-- Logo -->
+            <div class="h-[40px] w-[40px] bg-cover bg-center rounded-full" style="background-image: url('LOGO.PNG');"></div>
+    
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-4 ">
+                <a href="index.html" class="hover-color px-4  hover:text-2xl">Home</a>
+                <a href="Professional.html" class="hover-color px-4  hover:text-2xl">Professional Journey</a>
+                <a href="Project" class="hover-color px-4  hover:text-2xl">Projects</a>
+                <a href="contact.html" class="hover-color px-4  hover:text-2xl">Contact</a>
+                <a href="resume.html" class="hover-color px-4  hover:text-2xl">Resume</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden flex items-center px-3 py-2 border rounded text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-white" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <span class="ml-2"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-white shadow-lg">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100  hover:text-xl">Home</a>
+            <a href="professional.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Professional Journey</a>
+            <a href="Project" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Projects</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Contact</a>
+            <a href="resume.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Resume</a>
+
+        </div>
+    </nav>>
+    <div>
+        <h1 class="text-2xl font-bold text-center  text-black p-8 mt-12">Projects</h1>
+        <section class="border border-black  rounded-lg shadow-lg h-full bg-gray-200 p-4 w-[600px] mx-auto md:w-[1000px]">
+            <h1 class="text-2xl font-bold text-center bg-black h-[1/4] w-full rounded-lg shadow hover:bg-red-300 text-white border-1 border-black mt-0">My Portolio</h1>
+            <div class="border border-green-200 h-[2/4] w-full p-2 md:flex md:gap-6">
+                <p class="h-full w-[2/4] ">
+                    "This portfolio is a reflection of
+                     my life whole journey as education to arrive this time, 
+                     showcasing my skills in HTML, CSS, and JavaScript.
+                      I’ve designed it to be both visually appealing and user-friendly,
+                       with responsive layouts and interactive elements. 
+                       From seamless navigation to engaging sections that highlight my work,
+                        this project demonstrates my ability to craft elegant web solutions
+                         that are functional and beautiful."
+                </p>
+                <div class="h-full md:w-[2/4]">
+                <img src="porfolio.png" alt="ss of page">
+            </div>
+
+
+
+            </div>
+            <div class="flex gap-[650px]">
+                <button class="bg-green-400 rounded-lg border border-black text-xl mx-auto hover:bg-red-800 hover:text-bold"><a href="https://github.com/SUJEET-JMI/PORTFOLIO">Github Link</a></button>
+            </div>
+
+        </section>
+        <section class="border border-black  rounded-lg shadow-lg h-full bg-gray-200 p-4 mt-12 w-[600px] mx-auto md:w-[1000px]">
+            <h1 class="text-2xl font-bold text-center bg-black h-[1/4] w-full rounded-lg shadow hover:bg-green-300 text-white border-1 border-black mt-0">Resume Builder</h1>
+            <div class="border border-green-200 w-full p-2 md:flex md:gap-6">
+                <p class="h-full w-[3/4] ">
+                    "This Resume Builder project is designed to help users
+                     create professional resumes with ease. Built using HTML,
+                      CSS, and JavaScript, the tool allows users to input
+                       their personal information, education, skills,
+                        and work experience. With a sleek, user-friendly interface, 
+                        the resume is dynamically generated and styled to look 
+                        polished and ready for job applications. 
+                        The builder also offers customization options,
+                         letting users tailor their resumes to fit their personal 
+                         style and career goals. The final resume can be downloaded as a PDF,
+                          providing a seamless experience from creation to completion."
+                </p>
+                <div class="h-full ">
+                <img src="resumemade.png" alt="ss of page">
+            </div>
+
+
+
+            </div>
+            <div class="flex gap-[240px] md:gap-[650px]">
+            <button class="bg-green-400 ml-6 rounded-lg border border-black text-xl hover:bg-red-800 hover:text-bold"><a href="https://maderesume.netlify.app/">Click to Open</a></button>
+            <button class="bg-green-400 rounded-lg border border-black text-xl hover:bg-red-800 hover:text-bold"><a href="https://github.com/SUJEET-JMI/Resumemaker">Github Link</a></button>
+        </div>
+
+        </section>
+        <section class="border border-black  rounded-lg shadow-lg h-full bg-gray-200 p-4 mt-12 w-[600px] mx-auto md:w-[1000px]">
+            <h1 class="text-2xl font-bold text-center bg-black h-[1/4] w-full rounded-lg shadow hover:bg-green-300 text-white border-1 border-black mt-0">Rezorpay Clone</h1>
+            <div class="border border-green-200 w-full p-2 md:flex md:gap-6">
+                <p class="h-full w-[3/4] ">
+                    Razorpay Clone: A Payment App
+
+This Razorpay Clone is a sleek, user-friendly payment application built with HTML and CSS. It replicates the core features of the original Razorpay platform, offering a streamlined interface for processing transactions. The app showcases secure payment functionality and a responsive design, ensuring ease of use across different devices.
+
+
+                </p>
+                <div class="h-full ">
+                <img src="razor.png" alt="ss of page">
+            </div>
+
+
+
+            </div>
+            <div class="flex gap-[240px] md:gap-[650px]">
+            <button class="bg-green-400 rounded-lg border border-black text-xl mx-auto hover:bg-red-800 hover:text-bold"><a href="https://github.com/SUJEET-JMI/Razorpay-Clone">Github Link</a></button>
+        </div>
+
+        </section>
+        
+        
+       
+    </div>
+
+    <script src="name.js">
+    </script>
+    
+</body>
+</html>

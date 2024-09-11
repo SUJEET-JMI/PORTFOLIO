@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumePage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-400 shadow-lg fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <!-- Logo -->
+            <div class="h-[40px] w-[40px] bg-cover bg-center rounded-full" style="background-image: url('LOGO.PNG');"></div>
+    
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-4 ">
+                <a href="index.html" class="hover-color px-4  hover:text-2xl">Home</a>
+                <a href="Professional.html" class="hover-color px-4  hover:text-2xl">Professional Journey</a>
+                <a href="Project" class="hover-color px-4  hover:text-2xl">Projects</a>
+                <a href="contact.html" class="hover-color px-4  hover:text-2xl">Contact</a>
+                <a href="resume.html" class="hover-color px-4  hover:text-2xl">Resume</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden flex items-center px-3 py-2 border rounded text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-white" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <span class="ml-2"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-white shadow-lg">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100  hover:text-xl">Home</a>
+            <a href="professional.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Professional Journey</a>
+            <a href="Project" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Projects</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Contact</a>
+            <a href="resume.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Resume</a>
+
+        </div>
+    </nav>>
+    <div>
+    <div class="bg-cover bg-center h-20" style="background-image: url('resumeback.jpg');">
+        
+        <h1 class="text-2xl font-bold text-center  text-black p-8 mt-12 ">Resume</h1>
+    </div>
+        <embed src="RESUME.pdf" type="application/pdf" width="100%" height="600px" />
+
+        <button class="fixed bottom-12 right-5 bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition "><a href="RESUME.pdf" download> Download Resume</a></button>
+    </div>
+
+    <script src="name.js">
+    </script>
+    
+</body>
+</html>

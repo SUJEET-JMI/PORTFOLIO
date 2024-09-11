@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Education & Achievements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-400 shadow-lg fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <!-- Logo -->
+            <div class="h-[40px] w-[40px] bg-cover bg-center rounded-full" style="background-image: url('LOGO.PNG');"></div>
+    
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-4 ">
+                <a href="index.html" class="hover-color px-4  hover:text-2xl">Home</a>
+                <a href="Professional.html" class="hover-color px-4  hover:text-2xl">Professional Journey</a>
+                <a href="Project" class="hover-color px-4  hover:text-2xl">Projects</a>
+                <a href="contact.html" class="hover-color px-4  hover:text-2xl">Contact</a>
+                <a href="resume.html" class="hover-color px-4  hover:text-2xl">Resume</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden flex items-center px-3 py-2 border rounded text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-white" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <span class="ml-2"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-white shadow-lg">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100  hover:text-xl">Home</a>
+            <a href="professional.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Professional Journey</a>
+            <a href="Project" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Projects</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Contact</a>
+            <a href="resume.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Resume</a>
+
+        </div>
+    </nav>>
+
+    <!-- Skills Section -->
+    <section id="Skills" class="pt-24 pb-16 bg-gray-100 bg-black h-full bg-cover">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold text-center mb-8 text-white p-2">Skills</h1>
+
+            <div class="grid grid-cols-3 gap-4 md:grid-cols-4">
+                <div class="bg-gray-100 p-4 rounded shadow-md hover:bg-blue-600">
+                    <p class="text-center text-gray-700 font-semibold">HTML</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded shadow-md hover:bg-blue-600">
+                    <p class="text-center text-gray-700 font-semibold">CSS</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded shadow-md hover:bg-blue-600">
+                    <p class="text-center text-gray-700 font-semibold">JavaScript</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded shadow-md hover:bg-blue-600">
+                    <p class="text-center text-gray-700 font-semibold">React</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded shadow-md hover:bg-blue-600">
+                    <p class="text-center text-gray-700 font-semibold">Tailwindcss</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded shadow-md hover:bg-blue-600">
+                    <p class="text-center text-gray-700 font-semibold">Node.js</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded shadow-md hover:bg-blue-600">
+                    <p class="text-center text-gray-700 font-semibold">DSA</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded shadow-md hover:bg-blue-600">
+                    <p class="text-center text-gray-700 font-semibold">Java Programming</p>
+                </div>
+                
+               
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="pt-24 pb-16 bg-gray-100 bg-[url('\pro.jpg')] h-full bg-cover mt-8">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold text-center mb-8 text-white">Education</h1>
+            <ol class="relative border-s border-gray-200 dark:border-gray-700 md:ml-[350px]">
+                <!-- Timeline Items (Example) -->
+                <li class="mb-10 ms-6 ">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                        <img class="rounded-full shadow-lg" src="jamia.jpg" alt="Profile Image" />
+                    </span>
+                    <div class="items-center justify-between p-4 bg-green-400 border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600 w-[600px]">
+                        <time class="mb-1 mr-0 font-normal text-gray-800 sm:order-last sm:mb-0">2023-2025</time>
+                        <h1 class=" font-normal text-bold text-2xl text-gray-900 dark:text-black">MCA</h1>
+                        <p class="font-semibold text-gray-900 dark:text-green-400">Jamia Millia Islamia(New Delhi)</p>
+                    </div>
+                </li>
+                <li class="mb-10 ms-6 "></li>
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                        <img class="rounded-full shadow-lg" src="vibrm.jpg" alt="Profile Image" />
+                    </span>
+                    <div class="items-center justify-between p-4 bg-green-400 border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600 w-[600px] ml-6">
+                        <time class="mb-1 mr-0 font-normal text-gray-800 sm:order-last sm:mb-0">2018-2021</time>
+                        <h1 class=" font-normal text-bold text-2xl text-gray-900 dark:text-black">BCA</h1>
+                        <p class="font-semibold ml-8 text-gray-900 dark:text-green-400">Vaishali Institute of Business and Rural Management <br> Muzaffarpur(Bihar)</p>
+                    </div>
+                </li>
+                <li class="mb-10 ms-6 "></li>
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                        <img class="rounded-full shadow-lg" src="bseb.jpg" alt="Profile Image" />
+                    </span>
+                    <div class="items-center justify-between p-4 bg-green-400 border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600 w-[600px] ml-6">
+                        <time class="mb-1 mr-0 font-normal text-gray-800 sm:order-last sm:mb-0">2018</time>
+                        <h1 class=" font-normal text-bold text-2xl text-gray-900 dark:text-black">I.sc</h1>
+                        <p class="font-semibold text-gray-900 dark:text-green-400">K.S.R COLLEGE SARAI RANJAN, SAMASTIPUR(Bihar)(BSEB)</p>
+                    </div>
+                </li>
+                <li class="mb-10 ms-6 "></li>
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                        <img class="rounded-full shadow-lg" src="bseb.jpg" alt="Profile Image" />
+                    </span>
+                    <div class="items-center justify-between p-4 bg-green-400 border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600 w-[600px] ml-6">
+                        <time class="mb-1 mr-0 font-normal text-gray-800 sm:order-last sm:mb-0">2016</time>
+                        <h1 class=" font-normal text-bold text-2xl text-gray-900 dark:text-black">10th</h1>
+                        <p class="font-semibold ml-8 text-gray-900 dark:text-green-400">+2 High School Sarairanjan(Bihar)</p>
+                    </div>
+                </li>
+              
+                <!-- Repeat timeline structure as needed for other education items -->
+            </ol>
+        </div>
+    </section>
+    <!-- certificate section -->
+
+    <section id="certificate" class="pt-12 pb-8 bg-gray-100 bg-green-400 h-full bg-cover mt-8">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold text-center mb-8 text-white p-2">Certificates</h1>
+
+            <div class="grid grid-cols-3 gap-4 md:grid-cols-4">
+                <div>
+                <div class="bg-gray-100 p-4 rounded shadow-md hover:bg-blue-600 border-gray-800 border-4">
+                    <p class="text-center text-gray-700 font-semibold"> Hacker Rank Software Enginner Intern</p>
+                </div>
+                <img src="intern.PNG">
+            </div>
+                
+                
+               
+                <!-- Add more cetificate as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="pb-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold text-center mb-8">Achievements</h1>
+            <ol class=" border-s border-gray-200 dark:border-gray-700  md:ml-[350px]">
+                <!-- Timeline Items (Example) -->
+                <li class="mb-10 ms-6 "></li>
+                        <img class="rounded-full shadow h-24 w-24" src="tancet.jpg" alt="Profile Image" />
+                    <div class="items-center justify-between p-4 bg-green-400 border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600 w-[600px] ml-6">
+                        <p class="mb-1 mr-0 font-normal text-gray-800 sm:order-last sm:mb-0">Air 2</p>
+                        <p class="font-semibold ml-8 text-gray-900 dark:text-green-400">TANCET Entrance Exam</p>
+                    </div>
+                </li>
+                <li class="mb-10 ms-6 "></li>
+                        <img class="rounded-full shadow h-24 w-24" src="mhacet.jpg" alt="Profile Image" />
+                    <div class="items-center justify-between p-4 bg-green-400 border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600 w-[600px] ml-6">
+                        <p class="mb-1 mr-0 font-normal text-gray-800 sm:order-last sm:mb-0">99.25 Percentile</p>
+                        <p class="font-semibold ml-8 text-gray-900 dark:text-green-400">MHACET Entrance Exam</p>
+                    </div>
+                </li>
+                <!-- Repeat timeline structure as needed for other achievements -->
+            </ol>
+        </div>
+    </section>
+
+    <script src="name.js">
+    </script>
+
+</body>
+
+</html>

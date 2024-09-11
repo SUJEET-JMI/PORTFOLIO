@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-indigo-600 rounded-full">My Logo</div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="index.html" class="hover-color px-4">Home</a>
+                <a href="Professional.html" class="hover-color px-4">Professional Journey</a>
+                <a href="Project.html" class="hover-color px-4">Projects</a>
+                <a href="contact" class="hover-color px-4">Contact</a>
+                <a href="resume.html" class="hover-color px-4">Resume</a>
+              
+
+
+                
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden flex items-center px-3 py-2 border rounded text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-white" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <span class="ml-2">Menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-white shadow-lg">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="Professional.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Professional Journey</a>
+            <a href="Project.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Projects</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+            <a href="resume.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Resume</a>
+
+        </div>
+    </nav> <nav class="bg-gray-400 shadow-lg fixed w-full z-10 top-0"></nav>
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <!-- Logo -->
+            <div class="h-[40px] w-[40px] bg-cover bg-center rounded-full" style="background-image: url('LOGO.PNG');"></div>
+    
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-4 ">
+                <a href="index.html" class="hover-color px-4  hover:text-2xl">Home</a>
+                <a href="Professional.html" class="hover-color px-4  hover:text-2xl">Professional Journey</a>
+                <a href="Project" class="hover-color px-4  hover:text-2xl">Projects</a>
+                <a href="contact.html" class="hover-color px-4  hover:text-2xl">Contact</a>
+                <a href="resume.html" class="hover-color px-4  hover:text-2xl">Resume</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden flex items-center px-3 py-2 border rounded text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-white" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <span class="ml-2"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-white shadow-lg">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100  hover:text-xl">Home</a>
+            <a href="professional.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Professional Journey</a>
+            <a href="Project" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Projects</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Contact</a>
+            <a href="resume.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-xl">Resume</a>
+
+        </div>
+    </nav>
+    <div class="bg-cover bg-center h-screen" style="background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');">
+
+        <div class="flex items-center justify-center h-screen bg-black bg-opacity-50">
+          <div class="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Contact Us</h2>
+      
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="464522f0-b02f-44de-a0ef-57f612f46a29">
+              <div class="mb-6">
+                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Your Name">
+              </div>
+      
+              <div class="mb-6">
+                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Your Email">
+              </div>
+      
+              <div class="mb-6">
+                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                <textarea id="message" name="message" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" rows="4" placeholder="Your Message"></textarea>
+              </div>
+      
+              <div class="text-center">
+                <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition duration-300">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <script src="name.js">
+    </script>
+    
+</body>
+</html>
